@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hello-android</string>
+    <string name="btn1">버튼1</string>
+</resources>

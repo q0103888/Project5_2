@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--android: 는 안드로이드에서 제공하는 기본 옵션
+        match_parent = 부모(레이아웃)의 크기만큼 폭을 잡는다
+        wrap_content = 안에 참조되는 내용의 크기만큼 폭을 잡는다
+        아이디의 @는 리소스를 의미-->
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Button 2" />
+
+</LinearLayout>
