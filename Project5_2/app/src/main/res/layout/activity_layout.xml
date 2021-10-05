@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="전화번호"/>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_toRightOf="@+id/text"
-        android:hint="010-0000-0000"/>
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="010-0000-0000"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <Button
-        android:layout_width="70dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/edit"
-        android:layout_alignLeft="@+id/edit"
-        android:text="입력"/>
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
     <Button
-        android:layout_width="70dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/edit"
-        android:layout_alignRight="@+id/edit"
-        android:text="취소"/>
-
-
-
-</RelativeLayout>
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
