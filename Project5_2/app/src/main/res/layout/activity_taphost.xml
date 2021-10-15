@@ -10,37 +10,41 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabdog"
+                android:background="@drawable/dog"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabcat"
+                android:background="@drawable/cat"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabrabbit"
+                android:background="@drawable/rabbit"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabhorse"
+                android:background="@drawable/horse"
+                android:layout_gravity="center"/>
+        </FrameLayout>
         <TabWidget
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@android:id/tabs">
         </TabWidget>
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@android:id/tabcontent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tabsong"
-                android:orientation="vertical"
-                android:background="#F00000">
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tabArtist"
-                android:orientation="vertical"
-                android:background="#F0F000">
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tabAlbum"
-                android:orientation="vertical"
-                android:background="#F000FF">
-            </LinearLayout>
-        </FrameLayout>
     </LinearLayout>
 
 </TabHost>

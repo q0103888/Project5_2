@@ -27,32 +27,29 @@ import org.w3c.dom.Text;
 import java.util.Date;
 //기존은 AppCompatAcivity
 //
-@SuppressWarnings("deprecation")
-public class MainActivity extends TabActivity {
+public class FragmentJava extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_taphost);
+        setContentView(R.layout.activity_main);
 
-        TabHost tabHost = getTabHost();
-
-        TabHost.TabSpec tabdog = tabHost.newTabSpec("Dog").setIndicator("강아지");
-        tabdog.setContent(R.id.tabdog);
-        tabHost.addTab(tabdog);
-
-        TabHost.TabSpec tabcat = tabHost.newTabSpec("Cat").setIndicator("고양이");
-        tabcat.setContent(R.id.tabcat);
-        tabHost.addTab(tabcat);
-
-        TabHost.TabSpec tabrabbit = tabHost.newTabSpec("Rabbit").setIndicator("토끼");
-        tabrabbit.setContent(R.id.tabrabbit);
-        tabHost.addTab(tabrabbit);
-
-        TabHost.TabSpec tabhorse = tabHost.newTabSpec("Horse").setIndicator("말");
-        tabhorse.setContent(R.id.tabhorse);
-        tabHost.addTab(tabhorse);
-
-        tabHost.setCurrentTab(0);
     }
+
+    public void setFrag1(View v) {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction ft = manager.beginTransaction();
+
+        ft.replace(R.id.frame_container, new Fragment1(), "one");
+        ft.commitAllowingStateLoss();
+    }
+
+    public void setFrag2(View v) {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction ft = manager.beginTransaction();
+
+        ft.replace(R.id.frame_container, new Fragment2(), "two");
+        ft.commitAllowingStateLoss();
+    }
+
 }
