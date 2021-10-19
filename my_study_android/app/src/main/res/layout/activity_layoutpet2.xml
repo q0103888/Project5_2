@@ -8,58 +8,64 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="선택을 시작하시겠습니까?"/>
+        android:text="선택을 시작할거?"/>
 
-    <CheckBox
-        android:layout_width="match_parent"
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="시작함"
-        android:id="@+id/check"/>
+        android:text="시작함" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="좋아하는 동물은?"
-        android:id="@+id/text2"
-        android:visibility="invisible"/>
+        android:text="좋아하는 안드로이드 버젼은?"
+        android:visibility="invisible"
+        android:id="@+id/text1"/>
 
     <RadioGroup
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/radiogroup">
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/dog"
-            android:text="강아지"
+            android:text="파이(1.0)"
+            android:id="@+id/rdobtn1"
             android:visibility="invisible"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/cat"
-            android:text="고양이"
+            android:text="P(10.0)"
+            android:id="@+id/rdobtn2"
             android:visibility="invisible"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/horse"
-            android:visibility="invisible"
-            android:text="말"/>
+            android:text="R(11.0)"
+            android:id="@+id/rdobtn3"
+            android:visibility="invisible"/>
     </RadioGroup>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:text="선택완료"
-        android:id="@+id/buttonok"/>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
-        android:id="@+id/image"/>
+        android:id="@+id/img"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:id="@+id/btnend"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="처음으로"
+        android:id="@+id/btnstart"
+        android:visibility="invisible"/>
+
+
 </LinearLayout>
