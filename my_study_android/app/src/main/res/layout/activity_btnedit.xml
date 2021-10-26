@@ -3,26 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="20dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="선택을 시작하시겠습니까?"/>
 
-    <Switch
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="시작함"
-        android:id="@+id/aswich"/>
-
+        android:id="@+id/check"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="좋아하는 안드로이드 버전은?"
-        android:id="@+id/textview"
-        android:visibility="invisible"/>
-
+        android:text="좋아하는 동물은?"
+        android:visibility="invisible"
+        android:id="@+id/textview"/>
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,41 +29,34 @@
         android:visibility="invisible">
 
         <RadioButton
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/dog"
-            android:text="파이(9.0"/>
+            android:text="강아지"
+            android:id="@+id/radio1"/>
         <RadioButton
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Q(10.0)"
-            android:id="@+id/cat"/>
+            android:text="고양이"
+            android:id="@+id/radio2"/>
         <RadioButton
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="R(11.0)"
-            android:id="@+id/rabbit" />
+            android:text="말"
+            android:id="@+id/radio3"/>
 
     </RadioGroup>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택완료"
+        android:visibility="invisible"
+        android:id="@+id/btnok"/>
+
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:id="@+id/img"
-        android:visibility="invisible"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="종료"
-        android:id="@+id/btnend"
-        android:visibility="invisible"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="처음으로"
-        android:id="@+id/btnstart"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:id="@+id/img"/>
 
 </LinearLayout>

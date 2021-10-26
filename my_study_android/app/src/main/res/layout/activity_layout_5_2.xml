@@ -8,47 +8,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FF12FF"
+        android:background="#ADD8E6"
         android:layout_weight="1"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#6989FF"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="#00FA9A">
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FFF979"
+            android:background="#FF6347"
             android:orientation="vertical">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#0808FF">
-
+                android:background="#FA0000">
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-
+                android:background="#FFF00F">
+            </LinearLayout>
         </LinearLayout>
-
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#89FF89"
-        android:layout_weight="1">
-
+        android:layout_weight="1"
+        android:background="#9932CC">
     </LinearLayout>
 
 </LinearLayout>
