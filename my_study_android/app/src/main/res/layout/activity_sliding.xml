@@ -1,63 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="여기는 서랍 밖입니다."/>
+    android:orientation="vertical" >
+
     <SlidingDrawer
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:content="@+id/content"
-        android:handle="@+id/handle">
+        android:handle="@+id/handle"
+        android:orientation="vertical" >
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/handle"
-            android:text="서랍 손잡이"/>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Drag button1" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/content"
-            android:background="#00FF00"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Drawer1" />
 
             <SlidingDrawer
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:content="@+id/content"
-                android:handle="@+id/handle2">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:id="@+id/handle2"
-                android:text="안 서랍 손잡이"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/content2"
-                android:background="#00FFF0"
-                android:gravity="center"
-                android:orientation="vertical">
+                android:content="@+id/content2"
+                android:handle="@+id/handle2"
+                android:orientation="vertical" >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="여긴 두번째 서랍 안입니다."/>
+                <Button
+                    android:id="@+id/handle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Drag button2" />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text="Drawer2" />
+                </LinearLayout>
             </SlidingDrawer>
-
-
         </LinearLayout>
-
     </SlidingDrawer>
 
 </LinearLayout>

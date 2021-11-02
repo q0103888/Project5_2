@@ -33,7 +33,7 @@ public class petlike extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_btnedit);
 
-        aSwitch = (Switch)findViewById(R.id.aswich);
+        //aSwitch = (Switch)findViewById(R.id.aswich);
         textview = (TextView)findViewById(R.id.textview);
         radiog = (RadioGroup)findViewById(R.id.radiogroup);
         btn1 = (RadioButton)findViewById(R.id.rdobtn1);
@@ -97,9 +97,9 @@ public class petlike extends AppCompatActivity {
                 case R.id.cat :
                     img.setImageResource(R.drawable.cat);
                     break;
-                case R.id.rabbit :
-                    img.setImageResource(R.drawable.horse);
-                    break;
+//                case R.id.rabbit :
+//                    img.setImageResource(R.drawable.horse);
+                    //break;
                 default:
                     Toast.makeText(getApplicationContext(),"없어 시발", Toast.LENGTH_SHORT).show();
             }

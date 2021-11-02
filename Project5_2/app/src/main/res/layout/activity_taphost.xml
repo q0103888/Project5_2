@@ -43,6 +43,7 @@
         <TabWidget
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#F879FF"
             android:id="@android:id/tabs">
         </TabWidget>
     </LinearLayout>
