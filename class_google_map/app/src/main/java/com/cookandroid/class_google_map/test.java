@@ -29,7 +29,7 @@ public class test extends FragmentActivity  {
 
         dlg.setItems(TestArray, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int which) {
-                button1.setText(TestArray[which]);
+
             }
         });
 
